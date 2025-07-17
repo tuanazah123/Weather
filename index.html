@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" ></script>
+  <title>Weather in Kosovo</title>
+</head>
+<body>
+
+   <header>
+    <nav>
+      <h2>🌦 Kosova Weather</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <a href="#question">Pyetje</a>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Moti në Kosovë</h1>
+      <p>Mirë se vini në aplikacionin tonë të motit ku mund të shikoni temperaturat, lagështinë, dhe parashikimin javor për qytetet e Kosovës. Kërko qytetin tënd dhe informohu menjëherë!</p>
+      <a href="#search" class="btn">Shiko Motin</a>
+    </div>
+  </section>
+
+  <section class="search-section" id="search">
+    <div class="search-box">
+      <input type="text" id="userLocation" placeholder="Shkruaj qytetin...">
+      <button id="searchBtn">Kërko</button>
+    </div>
+    <div id="weatherResult" class="weather-card"></div>
+  </section>
+
+  <section class="question-section" id="question">
+  <div class="question-content">
+    <h2>Pse është i rëndësishëm një aplikacion për motin?</h2>
+    <p>
+      Një aplikacion për motin ndihmon njerëzit të planifikojnë ditën e tyre më mirë – qoftë për veshje, udhëtime, aktivitet në natyrë apo siguri personale.  
+      Ai ofron informacione të sakta dhe të shpejta për ndryshimet klimatike, temperaturën, lagështinë, dhe rreziqet si stuhitë ose reshjet.  
+      Në një botë gjithnjë e më të ndikuar nga klima, parashikimi i motit është thelbësor.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Kosova Weather. Të gjitha të drejtat e rezervuara.</p>
+    <p>Ndjek projektin në <a href="https://github.com/EMRIYT" target="_blank">GitHub</a></p>
+  </div>
+</footer>
+
+
+</body>
+</html>
