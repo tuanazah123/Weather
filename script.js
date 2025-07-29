@@ -1,4 +1,4 @@
-const apiKey = "ba9154d440a14442e8f73405d317962e"; // vendos çelësin tënd këtu
+const apiKey = "ba9154d440a14442e8f73405d317962e"; 
 
 document.addEventListener("DOMContentLoaded", () => {
   const searchBtn = document.getElementById("searchBtn");
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // API call
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=sq`)
       .then(response => {
         if (!response.ok) {
@@ -37,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Shpejtësia e erës:</strong> ${speed} m/s</p>
         `;
 
-        result.style.display = "block"; // e shfaq kartelën
+        result.style.display = "block"; 
       })
       .catch(error => {
         result.innerHTML = `<p style="color:red;">${error.message}</p>`;
@@ -45,4 +44,3 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
-
